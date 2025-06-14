@@ -33,7 +33,7 @@ app_key =
 installed = Off
 
 ; The canonical URL to the OJS installation (excluding the trailing slash)
-base_url = "https://pkp.sfu.ca/ojs"
+base_url = "https://app.discoveriesjournals.org"
 
 ; Enable strict mode. This will more aggressively cause errors/warnings when
 ; deprecated behaviour exists in the codebase.
@@ -96,7 +96,7 @@ restful_urls = Off
 ; An empty string indicates that all hosts should be trusted (not recommended!)
 ; Example:
 ; allowed_hosts = '["myjournal.tld", "anotherjournal.tld", "mylibrary.tld"]'
-allowed_hosts = ''
+allowed_hosts = '["discoveriesjournals.org"]'
 
 ; Allow the X_FORWARDED_FOR header to override the REMOTE_ADDR as the source IP
 ; Set this to "On" if you are behind a reverse proxy and you control the
@@ -251,7 +251,7 @@ umask = 0022
 
 ; Force SSL connections site-wide and also sets the "Secure" flag for session cookies
 ; See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#secure
-force_ssl = Off
+force_ssl = On
 
 ; Force SSL connections for login only
 force_login_ssl = Off
@@ -269,10 +269,10 @@ session_check_ip = On
 encryption = sha1
 
 ; The unique salt to use for generating password reset hashes
-salt = "YouMustSetASecretKeyHere!!"
+salt = "qtPWDRgcK729U6AVJQ62991+W8A3EWZLkbt2eoivYAM="
 
 ; The unique secret used for encoding and decoding API keys
-api_key_secret = ""
+api_key_secret = "qtPWDRgcK729U6AVJQ62991+W8A3EWZLkbt2eoivYAM="
 
 ; The number of seconds before a password reset hash expires (defaults to 7200 / 2 hours)
 reset_seconds = 7200
